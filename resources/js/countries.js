@@ -249,7 +249,7 @@ country_list_element.addEventListener('click',function(){
     search_country_element.classList.toggle('hide');
 });
 
-input.addEventListener("inout",function(){
+input.addEventListener("input",function(){
     let value = input.value.toUpperCase();
     country_list.forEach(
         country => {
