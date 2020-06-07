@@ -258,7 +258,7 @@ input.addEventListener("inout",function(){
 
             }
             else{
-                document.getElementById(country.name).classList.add('hde');
+                document.getElementById(country.name).classList.add('hide');
             }
         }
     )
