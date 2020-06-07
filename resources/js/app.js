@@ -19,9 +19,7 @@ let app_data = [],
 	cases_list = [],
 	deaths_list = [],
 	deaths = [],
-
-
-	let country_code = geoplugin_countryCode();
+        country_code = geoplugin_countryCode();
 	let user_country;
 	country_list.forEach( country => {
 		if(country_code == country_code){
