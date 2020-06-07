@@ -96,7 +96,7 @@ main{
 /* -------- BG IMAGE -------- */
 .stats{
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) , url('/resources/img/bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) , url('../../resources/img/bg.jpg');
     background-size: cover;
 }
 
