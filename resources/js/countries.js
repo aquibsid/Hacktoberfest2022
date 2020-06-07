@@ -208,9 +208,9 @@ let country_list = [
 //SELECT COUNTIES//
 const search_country_element = document.querySelector(".search-country");
 const country_list_element = document.querySelector(".country-list");
-const chang_country_btn = document.querySelector("change-country");
+const chang_country_btn = document.querySelector(".change-country");
 const close_list_btn = document.querySelector(".close");
-const input = document.getElementById('.search-input')
+const input = document.getElementById('search-input')
  
 // Create TE country list//
 function createCountryList(){
@@ -225,7 +225,7 @@ function createCountryList(){
             i++;
         }
         document.getElementById(`${ul_list_id}`).innerHTML += `
-        <li onclick = "fetchDeta('${country.name}')" id="${country.name}">
+        <li onclick = "fetchData('${country.name}')" id="${country.name}">
         ${country.name}
         </li>
         `;
@@ -249,7 +249,7 @@ country_list_element.addEventListener('click',function(){
     search_country_element.classList.toggle('hide');
 });
 
-input.addEventListener("inout",function(){
+input.addEventListener("input",function(){
     let value = input.value.toUpperCase();
     country_list.forEach(
         country => {
