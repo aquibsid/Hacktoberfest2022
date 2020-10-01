@@ -6,7 +6,6 @@ const recovered_element = document.querySelector(".recovered .value");
 const new_recovered_element = document.querySelector(".recovered .new-value");
 const deaths_element = document.querySelector(".deaths .value");
 const new_deaths_element = document.querySelector(".deaths .new-value");
-
 const ctx = document.getElementById("axes_line_chart").getContext("2d");
 
 // APP VARIABLES
@@ -137,6 +136,5 @@ const monthsNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Aug', 'Sep', 'Oc
 
 function formatDate(dateString){
 	let date = new Date(dateString);
-
 	return `${date.getDate()} ${monthsNames[date.getMonth()]}`;
 }
