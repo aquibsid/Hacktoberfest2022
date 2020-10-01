@@ -45,7 +45,6 @@ html{
 header{
     display: flex;
     align-items: center;
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     background-color: rgb(172, 182, 193);
@@ -53,10 +52,10 @@ header{
 }
 /* -------- LOGO -------- */
 .logo{
-    display: flex;  
+    display: flex;
     align-items: center;
     padding-left: 20px;
-   
+
 }
 .logo img{
     width: 60px;
@@ -67,7 +66,7 @@ header{
 }
 /* -------- NAV -------- */
 nav{
- 
+
 }
 nav ul{
     display: flex;
@@ -89,7 +88,6 @@ nav ul li a{
 /* ---------------------------------------------- */
 
 main{
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -98,6 +96,7 @@ main{
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) , url('../../resources/img/bg.jpg');
     background-size: cover;
+
 }
 
 /* -------- LATEST REPORT -------- */
@@ -115,7 +114,7 @@ main{
 .total-cases,
 .recovered,
 .deaths{
-    
+
     height: 100px;
 
 }
@@ -222,17 +221,17 @@ main{
 .country-list::-webkit-scrollbar {
     width: 10px;
   }
-  
+
   /* Track */
   .country-list::-webkit-scrollbar-track {
     background: #1111;
   }
-  
+
   /* Handle */
   .country-list::-webkit-scrollbar-thumb {
     background: #f1f1f1;
   }
-  
+
   /* Handle on hover */
   .country-list::-webkit-scrollbar-thumb:hover {
     background: #fff;
@@ -241,25 +240,25 @@ main{
 /* ---------------------------------------------- */
 /*                    FOOTER                      */
 footer{
-    max-width: 1200px;
-    height: 60px;
+    height: 100px;
     margin: 0 auto;
     background-color: teal;
 }
 .footer-container{
+    background-color: black;
     height: 100%;
     display: flex;
     justify-content: center;
 }
 .copyright{
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
 .copyright p{
-    color: black;
+    color: white;
     align-content: center;
 }
 /* ---------------------------------------------- */
@@ -275,8 +274,6 @@ footer{
     }
 }
 .clock{
-  background-color: black;
-  top: 800px;
-  margin-left : auto;
-  margin-right: auto;
+  align-items: center;
+  background-color:  cyan;
 }
