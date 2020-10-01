@@ -274,3 +274,9 @@ footer{
         align-self: start;
     }
 }
+.clock{
+  background-color: black;
+  top: 800px;
+  margin-left : auto;
+  margin-right: auto;
+}
