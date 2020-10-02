@@ -238,12 +238,14 @@ main{
 /*                    FOOTER                      */
 footer{
     height: 100px;
-    
+    position:fixed;
+    bottom:0;
     margin: 0 auto;
     background-color: teal;
 }
 .footer-container{
     background-color: black;
+    position:absolute;
     height: 100%;
     display: flex;
     justify-content: center;
