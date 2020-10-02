@@ -245,7 +245,7 @@ footer{
 }
 .footer-container{
     background-color: black;
-    position:absolute;
+    position:fixed;
     height: 100%;
     display: flex;
     justify-content: center;
