@@ -251,8 +251,7 @@ footer{
 .copyright{
     height: 80px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 20px;
 
 }
 .copyright p{
@@ -277,6 +276,12 @@ footer{
     overflow:hidden;
 }
 .clock{
-  align-items: center;
-  background-color:  cyan;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:  black;
+}
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
