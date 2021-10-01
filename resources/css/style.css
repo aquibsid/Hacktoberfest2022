@@ -276,6 +276,12 @@ footer{
     overflow:hidden;
 }
 .clock{
-  align-items: center;
-  background-color:  cyan;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:  black;
+}
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
