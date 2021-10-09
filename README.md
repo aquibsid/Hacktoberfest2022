@@ -5,3 +5,6 @@ what is hacktoberfest?
 Hacktoberfest is a month-long challenge. It happens every year in the month of October. Hacktoberfest is open to everyone and it marks the celebration of Open Source. It’s the biggest Open Source event that encourages newbies to participate in Open Source and create their 1st meaningful PR.
 
 How do I track my progress?
+
+"Log in with your GitHub or GitLab account at hacktoberfest.digitalocean.com to check your progress and stats.
+"
