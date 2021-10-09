@@ -10,6 +10,7 @@ Hacktoberfest is a month-long challenge. It happens every year in the month of O
 
 How do I get stickers?
 
+
 How do I track my progress?
 
 
