@@ -13,6 +13,7 @@ How do I track my progress?
 what is open source
 
 What is open source? 
+Open source refers to source code that is publicly accessible and allows anyone to inspect, modify or learn from it. Open source projects encourage collaboration and the freedom to use the software for any purpose you wish.
 
 
 Stickers are included with your T-shirt, once you completed the requirements to earn a prize.
