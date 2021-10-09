@@ -20,6 +20,8 @@ Stickers are included with your T-shirt, once you completed the requirements to 
 
 Log in with your GitHub or GitLab account at hacktoberfest.digitalocean.com to check your progress and stats.
 
+How is DigitalOcean helping the environment? 
+
 
 
 
