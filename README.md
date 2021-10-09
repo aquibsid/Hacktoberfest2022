@@ -13,3 +13,7 @@ How do I get stickers?
 
 How do I track my progress?
 
+Log in with your GitHub or GitLab account at hacktoberfest.digitalocean.com to check your progress and stats.
+
+
+
