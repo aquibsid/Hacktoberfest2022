@@ -29,6 +29,8 @@ Log in with your GitHub or GitLab account at hacktoberfest.digitalocean.com to c
 What is a pull request? 
 Pull requests are proposed code changes you can submit to a branch in a repository on GitHub/GitLab. Once submitted, a project maintainer will review and discuss the changes before they become final. 
 
+
+
 How is DigitalOcean helping the environment? 
 
 "To limit our carbon impact, we are paying for carbon offsets. And to further help the environment, we're offering the option to plant a tree rather than receive a shirt.
