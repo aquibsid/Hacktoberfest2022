@@ -260,6 +260,15 @@ footer{
     color: white;
     align-content: center;
 }
+.topcountries{
+   width: 80%;
+   height: 80vh; 
+   margin: 0 auto;
+}
+.topcountries canvas{
+    width: 100%;
+    height: 90%;
+}
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
