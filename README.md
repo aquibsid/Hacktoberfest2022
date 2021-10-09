@@ -28,6 +28,8 @@ Log in with your GitHub or GitLab account at hacktoberfest.digitalocean.com to c
 
 What is a pull request? 
 
+
+
 How is DigitalOcean helping the environment? 
 
 "To limit our carbon impact, we are paying for carbon offsets. And to further help the environment, we're offering the option to plant a tree rather than receive a shirt.
