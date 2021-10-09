@@ -19,19 +19,10 @@ what is open source
 
 
 What is open source? 
-Open source refers to source code that is publicly accessible and allows anyone to inspect, modify or learn from it. Open source projects encourage collaboration and the freedom to use the software for any purpose you wish.
-
-
-Stickers are included with your T-shirt, once you completed the requirements to earn a prize.
-
-
-
-
-Log in with your GitHub or GitLab account at hacktoberfest.digitalocean.com to check your progress and stats.
-
+=>Open source refers to source code that is publicly accessible and allows anyone to inspect, modify or learn from it. Open source projects encourage collaboration and the freedom to use the software for any purpose you wish.
 
 What is a pull request? 
-Pull requests are proposed code changes you can submit to a branch in a repository on GitHub/GitLab. Once submitted, a project maintainer will review and discuss the changes before they become final. 
+=>Pull requests are proposed code changes you can submit to a branch in a repository on GitHub/GitLab. Once submitted, a project maintainer will review and discuss the changes before they become final. 
 
 How is DigitalOcean helping the environment? 
 =>"To limit our carbon impact, we are paying for carbon offsets. And to further help the environment, we're offering the option to plant a tree rather than receive a shirt.
