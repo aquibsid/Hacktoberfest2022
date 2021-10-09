@@ -29,6 +29,9 @@ What is a pull request?
 
 How is DigitalOcean helping the environment? 
 
+"To limit our carbon impact, we are paying for carbon offsets. And to further help the environment, we're offering the option to plant a tree rather than receive a shirt.
+Fun fact: Hacktoberfest shirts flew 336 million miles internationally last year. In total, it adds up to a fully loaded 747 flying 676 miles."
+
 
 
 
