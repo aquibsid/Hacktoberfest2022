@@ -11,6 +11,7 @@ How do I get stickers?
 =>Stickers are included with your T-shirt, once you completed the requirements to earn a prize.
 
 
+
 How do I track my progress?
 =>Log in with your GitHub or GitLab account at hacktoberfest.digitalocean.com to check your progress and stats.
 
