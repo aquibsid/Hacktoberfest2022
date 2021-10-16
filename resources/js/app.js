@@ -183,3 +183,30 @@ function formatDate(dateString) {
 
   return `${date.getDate()} ${monthsNames[date.getMonth() - 1]}`;
 }
+
+
+//TOP 10 Countries Bar Chart (Still Static Data)
+const barcanvas = document.querySelector('#bar_chart');
+let barChart = new Chart(barcanvas,{
+  type: 'bar',
+  data: {
+    labels: ['US', 'India', 'Brazil', 'United Kingdom', 'Russia', 'France', 'Turkey', 'Iran', 'Argentina', 'Spain'],
+    datasets: [{
+      label: 'Confirmed',
+      data: [
+        45135620,
+        33935309,
+        21550730,
+        8081300,
+        7746718,
+        7387537,
+        7047786,
+        5683980,
+        5265058,
+        4973619,
+      ],
+      backgroundColor: 'red'
+    }]
+    
+  }
+})
