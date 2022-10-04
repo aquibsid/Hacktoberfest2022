@@ -1,4 +1,4 @@
-# covid19
+# COVID-19
 You Can Contribute to this project participating Hacktoberfest 2022
 
 
