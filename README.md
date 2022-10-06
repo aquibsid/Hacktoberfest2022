@@ -24,6 +24,7 @@ What is open source?
 
 
 What is a pull request? 
+
 =>Pull requests are proposed code changes you can submit to a branch in a repository on GitHub/GitLab. Once submitted, a project maintainer will review and discuss the changes before they become final. 
 
 
