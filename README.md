@@ -29,7 +29,10 @@ What is a pull request?
 
 =>Pull requests are proposed code changes you can submit to a branch in a repository on GitHub/GitLab. Once submitted, a project maintainer will review and discuss the changes before they become final. 
 
+
+India reports 2,797 new Covid cases; active caseload below 30k after 122 days
 India has reported 2,797 new Covid cases and 24 more deaths in 24 hours. Active caseload has dropped below 30k mark after 122 days. The national recovery rate stands at 98.75%.
+
 
 
 List of Countries/Regions in respect of which primary vaccination schedule completion certificate is allowed to be considered (in context of guidelines for international arrivals updated on 2nd September 2022)
