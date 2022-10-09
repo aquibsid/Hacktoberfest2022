@@ -50,5 +50,7 @@ Fun fact: Hacktoberfest shirts flew 336 million miles internationally last year.
 What is open source? 
 =>Open source refers to source code that is publicly accessible and allows anyone to inspect, modify or learn from it. Open source projects encourage collaboration and the freedom to use the software for any purpose you wish.
 
+Coronavirus in India live updates: India's active caseload falls below 30k mark after 122 days
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
