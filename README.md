@@ -18,6 +18,13 @@ How do I track my progress?
 
 =>Log in with your GitHub or GitLab account at hacktoberfest.digitalocean.com to check your progress and stats.
 
+covid 19 updates
+
+covid 19 impacts 
+
+Situation after covid 19 
+covid 19 
+
 
 
 What is open source? 
