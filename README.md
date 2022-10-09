@@ -1,5 +1,9 @@
 # COVID-19
-You Can Contribute to this project participating Hacktoberfest 2022
+You Can Contribute to this project participating Hacktoberfest 2022 
+
+here the latest news of covid 19 
+
+covid 19 
 
 
 what is hacktoberfest?
