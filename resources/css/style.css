@@ -236,13 +236,7 @@ main{
 
 /* ---------------------------------------------- */
 /*                    FOOTER                      */
-footer{
-    height: 100px;
-    position:fixed;
-    bottom:0;
-    margin: 0 auto;
-    background-color: teal;
-}
+
 .footer-container{
     background-color: black;
     position:fixed;
@@ -262,7 +256,7 @@ footer{
 }
 .topcountries{
    width: 80%;
-   height: 80vh; 
+   padding-bottom: 20px;
    margin: 0 auto;
 }
 .topcountries canvas{
@@ -295,4 +289,55 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+footer{
+    background-color: #272727;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-top: auto;
+}
+
+footer li{
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.icons a{
+    background: #52527a;
+    color: #272727;
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 100%;
+    display: flex;
+}
+.icons a:hover{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu a{
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.menu a:hover{
+    letter-spacing: 1.1px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-copyright{
+    background-color:#52527a;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.footer-copyright p{
+    margin-bottom: 0px;
 }
