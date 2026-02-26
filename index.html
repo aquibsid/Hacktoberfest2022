@@ -5,8 +5,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> COVID-19 STATS </title>
-        <title> BY AQUIB </title>
-        <link rel="stylesheet" href="./resources/css/style.css">
+                <link rel="stylesheet" href="./resources/css/style.css">
         <!-- Icons CDN -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -36,17 +35,17 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="index.html" class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        <a href="index.html" class="nav-link">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://github.com/aquibsid" target="_blank" class="nav-link" href="#">CONTACT</a>
+                        <a href="https://github.com/aquibsid" target="_blank" class="nav-link">CONTACT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">LOGIN</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link" href="#">ABOUT</a>
+                        <a href="about.html" class="nav-link">ABOUT</a>
                     </li>
 
                     </ul>
@@ -97,6 +96,17 @@
                     <div class="new-value">+0</div>
                    </div>
                 </div>
+
+                <div class="dashboard-controls">
+                    <button id="refresh-data" class="control-btn" type="button">Refresh Data</button>
+                    <button id="toggle-theme" class="control-btn" type="button">Toggle Theme</button>
+                    <span id="last-updated" class="last-updated">Last updated: waiting for data</span>
+                </div>
+
+                <div id="loading-indicator" class="loading-indicator hide" aria-live="polite">
+                    Fetching latest country data...
+                </div>
+
                 <div class="chart">
                     <canvas id="axes_line_chart"></canvas>
                 </div>

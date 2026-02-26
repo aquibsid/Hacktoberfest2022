@@ -210,65 +210,96 @@ const search_country_element = document.querySelector(".search-country");
 const country_list_element = document.querySelector(".country-list");
 const chang_country_btn = document.querySelector(".change-country");
 const close_list_btn = document.querySelector(".close");
-const input = document.getElementById('search-input')
+const input = document.getElementById('search-input');
 
-// CREATE TE COUNTRY LIST
+function getCountryItemSelector(countryName) {
+    return `li[data-country="${countryName.replace(/"/g, '\\"')}"]`;
+}
+
+// CREATE THE COUNTRY LIST
 function createCountryList(){
     const num_countries = country_list.length;
 
-    let i = 0, ul_list_id;
+    let i = 0;
+    let ul_list_id;
 
-    country_list.forEach( (country, index) => {
-        if( index % Math.ceil(num_countries/num_of_ul_lists) == 0){
+    country_list.forEach((country, index) => {
+        if (index % Math.ceil(num_countries / num_of_ul_lists) === 0) {
             ul_list_id = `list-${i}`;
             country_list_element.innerHTML += `<ul id='${ul_list_id}'></ul>`;
             i++;
         }
 
-        document.getElementById(`${ul_list_id}`).innerHTML += `
-            <li onclick="fetchData('${country.name}')" id="${country.name}">
+        document.getElementById(ul_list_id).innerHTML += `
+            <li data-country="${country.name}">
             ${country.name}
             </li>
         `;
-    })
+    });
 }
 
 let num_of_ul_lists = 3;
-createCountryList();
 
-// SHOW/HIDE THE COUTRY LIST ON CLICK EVENT
-chang_country_btn.addEventListener("click", function(){
-    input.value = "";
-    resetCountryList();
-    search_country_element.classList.toggle("hide");
-    search_country_element.classList.add("fadeIn");
-});
+if (search_country_element && country_list_element && chang_country_btn && close_list_btn && input) {
+    createCountryList();
 
-close_list_btn.addEventListener("click", function(){
-    search_country_element.classList.toggle("hide");
-});
+    // SHOW/HIDE THE COUNTRY LIST ON CLICK EVENT
+    chang_country_btn.addEventListener("click", function(){
+        input.value = "";
+        resetCountryList();
+        search_country_element.classList.toggle("hide");
+        search_country_element.classList.add("fadeIn");
+    });
 
-country_list_element.addEventListener("click", function(){
-    search_country_element.classList.toggle("hide");
-});
+    close_list_btn.addEventListener("click", function(){
+        search_country_element.classList.add("hide");
+    });
 
-// COUNTRY FILTER
-/* input event fires up whenever the value of the input changes */
-input.addEventListener("input", function(){
-    let value = input.value.toUpperCase();
+    country_list_element.addEventListener("click", function(event){
+        const countryItem = event.target.closest('li[data-country]');
 
-    country_list.forEach( country => {
-        if( country.name.toUpperCase().startsWith(value)){
-            document.getElementById(country.name).classList.remove("hide");
-        }else{
-            document.getElementById(country.name).classList.add("hide");
+        if (!countryItem) {
+            return;
         }
-    })
-})
 
-// RESET COUNTRY LIST (SHOW ALL THE COUNTRIES )
+        const selectedCountry = countryItem.getAttribute('data-country');
+
+        if (typeof window.onCountrySelected === 'function') {
+            window.onCountrySelected(selectedCountry);
+        } else if (typeof window.fetchData === 'function') {
+            window.fetchData(selectedCountry);
+        }
+
+        search_country_element.classList.add("hide");
+    });
+
+    // COUNTRY FILTER
+    input.addEventListener("input", function(){
+        const value = input.value.toUpperCase();
+
+        country_list.forEach((country) => {
+            const countryElement = country_list_element.querySelector(getCountryItemSelector(country.name));
+            if (!countryElement) {
+                return;
+            }
+
+            if (country.name.toUpperCase().startsWith(value)) {
+                countryElement.classList.remove("hide");
+            } else {
+                countryElement.classList.add("hide");
+            }
+        });
+    });
+}
+
+// RESET COUNTRY LIST (SHOW ALL COUNTRIES)
 function resetCountryList(){
-    country_list.forEach( country => {
-        document.getElementById(country.name).classList.remove("hide");
-    })
+    country_list.forEach((country) => {
+        const countryElement = country_list_element
+            ? country_list_element.querySelector(getCountryItemSelector(country.name))
+            : null;
+        if (countryElement) {
+            countryElement.classList.remove("hide");
+        }
+    });
 }

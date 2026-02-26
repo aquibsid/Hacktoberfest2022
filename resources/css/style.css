@@ -144,6 +144,41 @@ main{
     font-size: 1.3em;
 }
 
+.dashboard-controls{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.control-btn{
+    background: #52527a;
+    color: #fff;
+    border: 1px solid #6b6ba1;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.control-btn:hover{
+    background: #6b6ba1;
+}
+
+.last-updated{
+    font-size: 0.95rem;
+    color: #d8d8e8;
+}
+
+.loading-indicator{
+    width: 80%;
+    margin: 10px auto 0;
+    color: #9de3da;
+    font-size: 0.95rem;
+}
+
 
 /* -------- CHART -------- */
 .chart{
@@ -274,6 +309,25 @@ main{
         flex-direction: column;
         align-self: start;
     }
+}
+
+body.light-theme .stats{
+    background-image: linear-gradient(rgba(248,248,248,0.96), rgba(248,248,248,0.96)) , url('../../resources/img/bg.jpg');
+}
+
+body.light-theme .latest-report,
+body.light-theme .dashboard-controls,
+body.light-theme .loading-indicator,
+body.light-theme .topcountries .name{
+    color: #1d1d1d;
+}
+
+body.light-theme .total-cases .value{
+    color: #111;
+}
+
+body.light-theme .new-value{
+    color: #333;
 }
 .containers{
     width:90%; 
