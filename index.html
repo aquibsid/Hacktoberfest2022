@@ -97,6 +97,17 @@
                     <div class="new-value">+0</div>
                    </div>
                 </div>
+
+                <div class="dashboard-controls">
+                    <button id="refresh-data" class="control-btn" type="button">Refresh Data</button>
+                    <button id="toggle-theme" class="control-btn" type="button">Toggle Theme</button>
+                    <span id="last-updated" class="last-updated">Last updated: waiting for data</span>
+                </div>
+
+                <div id="loading-indicator" class="loading-indicator hide" aria-live="polite">
+                    Fetching latest country data...
+                </div>
+
                 <div class="chart">
                     <canvas id="axes_line_chart"></canvas>
                 </div>

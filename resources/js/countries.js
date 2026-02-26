@@ -226,7 +226,7 @@ function createCountryList(){
         }
 
         document.getElementById(`${ul_list_id}`).innerHTML += `
-            <li onclick="fetchData('${country.name}')" id="${country.name}">
+            <li data-country="${country.name}" id="${country.name}">
             ${country.name}
             </li>
         `;
@@ -234,41 +234,61 @@ function createCountryList(){
 }
 
 let num_of_ul_lists = 3;
-createCountryList();
 
-// SHOW/HIDE THE COUTRY LIST ON CLICK EVENT
-chang_country_btn.addEventListener("click", function(){
-    input.value = "";
-    resetCountryList();
-    search_country_element.classList.toggle("hide");
-    search_country_element.classList.add("fadeIn");
-});
+if (search_country_element && country_list_element && chang_country_btn && close_list_btn && input) {
+    createCountryList();
 
-close_list_btn.addEventListener("click", function(){
-    search_country_element.classList.toggle("hide");
-});
+    // SHOW/HIDE THE COUTRY LIST ON CLICK EVENT
+    chang_country_btn.addEventListener("click", function(){
+        input.value = "";
+        resetCountryList();
+        search_country_element.classList.toggle("hide");
+        search_country_element.classList.add("fadeIn");
+    });
 
-country_list_element.addEventListener("click", function(){
-    search_country_element.classList.toggle("hide");
-});
+    close_list_btn.addEventListener("click", function(){
+        search_country_element.classList.toggle("hide");
+    });
 
-// COUNTRY FILTER
-/* input event fires up whenever the value of the input changes */
-input.addEventListener("input", function(){
-    let value = input.value.toUpperCase();
+    country_list_element.addEventListener("click", function(event){
+        const countryItem = event.target.closest('li[data-country]');
 
-    country_list.forEach( country => {
-        if( country.name.toUpperCase().startsWith(value)){
-            document.getElementById(country.name).classList.remove("hide");
-        }else{
-            document.getElementById(country.name).classList.add("hide");
+        if (!countryItem) {
+            return;
         }
+
+        const selectedCountry = countryItem.getAttribute('data-country');
+
+        if (typeof window.onCountrySelected === 'function') {
+            window.onCountrySelected(selectedCountry);
+        } else if (typeof window.fetchData === 'function') {
+            window.fetchData(selectedCountry);
+        }
+
+        search_country_element.classList.add("hide");
+    });
+
+    // COUNTRY FILTER
+    /* input event fires up whenever the value of the input changes */
+    input.addEventListener("input", function(){
+        let value = input.value.toUpperCase();
+
+        country_list.forEach( country => {
+            if( country.name.toUpperCase().startsWith(value)){
+                document.getElementById(country.name).classList.remove("hide");
+            }else{
+                document.getElementById(country.name).classList.add("hide");
+            }
+        })
     })
-})
+}
 
 // RESET COUNTRY LIST (SHOW ALL THE COUNTRIES )
 function resetCountryList(){
     country_list.forEach( country => {
-        document.getElementById(country.name).classList.remove("hide");
+        const countryElement = document.getElementById(country.name);
+        if (countryElement) {
+            countryElement.classList.remove("hide");
+        }
     })
 }
